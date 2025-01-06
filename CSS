@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(Fotos/background.png);
+    background-size: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    position: relative;
+}
+
+section input {
+    background-color: white;
+    color: black;
+    inset: 0;
+    padding: 4px 6px;
+    margin: 2px auto;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    width: 340px;
+    height: 40px;
+    box-shadow: 0 0 2px 0 black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    background-color: #2E202D;
+    color: white;
+    padding: 12px 12px;
+    border: solid 1px white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover {
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-size: 35px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    overflow: auto;
+    background-color: #664863;
+    padding: 20px 10px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 300px auto;
+    border-radius: 15px;
+    border: white solid 1px;
+}
+
+.cadastro {
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+
+/* Icones da Senha */
+#icon {
+    position: absolute;
+    top: 45%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: url('Fotos/openedeye.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 710px;
+    margin-top: 8px;
+}
+
+#icon.hide {
+    background: url('Fotos/closedeye.png');
+    background-size: cover;
+}
