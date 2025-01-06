@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="card">
+                    <h1 class="login">Cadastro</h1>
+                    <ul>
+                        <input type="text" placeholder="Nome Completo">
+                        <input type="email" placeholder="E-Mail">
+                        <input id="ddd" type="text" placeholder="Celular com DDD">
+                        <input type="password" placeholder="Senha" id="password">
+                        <div onclick="showHide()"></div>
+                        <input type="password" placeholder="Repita a senha">
+                        <div onclick="showHide()"></div>
+                        <button type="submit" class="cadastrar">Cadastrar</button>
+                    </ul>
+                </div>
+                <div class="card card--forget">
+                    <p class="cadastro">Já possui login?  <a href="Index.html">  Clique aqui!</a></p>
+                   
+        </section>
+        <!-- SCRIPT -->
+        <script src="Script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+        <script>
+            $('#ddd').mask('(00) 0000-0000');
+        </script>
+    </main>
+</body>
+</html>
